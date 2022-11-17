@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.matController">
+   <children>
+      <AnchorPane prefHeight="480.0" prefWidth="640.0">
+         <children>
+            <TextField fx:id="num1" layoutX="130.0" layoutY="113.0" prefHeight="37.0" prefWidth="270.0" />
+            <TextField fx:id="num2" layoutX="130.0" layoutY="166.0" prefHeight="37.0" prefWidth="270.0" />
+            <Label fx:id="resultado" layoutX="35.0" layoutY="277.0" prefHeight="60.0" prefWidth="388.0" textFill="#199409">
+               <font>
+                  <Font name="Courier New" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="120.0" prefHeight="22.0" prefWidth="92.0" text="NUMERO 1">
+               <font>
+                  <Font name="Courier New" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="173.0" prefHeight="22.0" prefWidth="92.0" text="NUMERO 2">
+               <font>
+                  <Font name="Courier New" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="34.0" prefHeight="37.0" prefWidth="263.0" text="Calculadora Simples">
+               <font>
+                  <Font name="Courier New" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="439.0" layoutY="84.0" prefHeight="22.0" prefWidth="167.0" text="OPERAÇÕES MATEMATICAS">
+               <font>
+                  <Font name="Courier New" size="13.0" />
+               </font>
+            </Label>
+            <Button layoutX="441.0" layoutY="114.0" mnemonicParsing="false" onAction="#adicao" prefHeight="22.0" prefWidth="8.0" stylesheets="@../application/application.css" text="+">
+               <font>
+                  <Font name="Courier New Bold" size="30.0" />
+               </font>
+            </Button>
+            <Button layoutX="547.0" layoutY="115.0" mnemonicParsing="false" onAction="#subtracao" prefHeight="26.0" prefWidth="26.0" text="-">
+               <font>
+                  <Font name="Courier New" size="30.0" />
+               </font>
+            </Button>
+            <Button layoutX="441.0" layoutY="184.0" mnemonicParsing="false" onAction="#multiplicacao" prefHeight="15.0" prefWidth="25.0" text="*">
+               <font>
+                  <Font name="Courier New" size="30.0" />
+               </font>
+            </Button>
+            <Button layoutX="547.0" layoutY="185.0" mnemonicParsing="false" onAction="#divisao" prefHeight="22.0" prefWidth="43.0" text="/">
+               <font>
+                  <Font name="Courier New" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="limpar" layoutX="464.0" layoutY="258.0" mnemonicParsing="false" onAction="#limpar" prefHeight="0.0" prefWidth="118.0" text="LIMPAR">
+               <font>
+                  <Font name="Courier New" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

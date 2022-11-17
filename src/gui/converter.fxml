@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ConverterController">
+   <children>
+      <AnchorPane prefHeight="403.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="temperature" layoutX="71.0" layoutY="79.0" prefHeight="25.0" prefWidth="469.0" />
+            <Label layoutX="71.0" layoutY="58.0" text="Temperatura">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="243.0" layoutY="242.0" prefHeight="52.0" prefWidth="114.0" text="Resultado" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="fa" layoutX="71.0" layoutY="181.0" mnemonicParsing="false" onAction="#converterFa" text="Fahrenheit">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="temp" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="ce" layoutX="405.0" layoutY="181.0" mnemonicParsing="false" onAction="#converterCe" text="Celsius" toggleGroup="$temp">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </RadioButton>
+            <Label fx:id="res" layoutX="100.0" layoutY="286.0" prefHeight="25.0" prefWidth="404.0" text="0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="71.0" layoutY="120.0" prefHeight="39.0" prefWidth="218.0" text="Converter Para:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
